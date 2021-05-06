@@ -1,0 +1,112 @@
+/*Globals*/
+html,body,*{
+    margin: 0;
+    padding: 0;
+    background-color: #5CDB95;
+    outline: none;
+}
+::placeholder{
+    color: #5CDB95;
+}
+/*Header Section*/
+header {
+    height: 8%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    overflow:hidden; /* for float if flex not supported */
+}
+#logo {
+    margin-left: 2%;
+    height: 100%;
+    width: 8%;
+    float: left;
+    flex-shrink: 0;
+}
+
+#title{
+    color: #05386B;
+    font-weight: bold;
+    font-size: 250%;
+}
+
+nav {
+    padding: 2px;
+    float: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+    padding: 11px;
+    margin-right: 20px;
+}
+li span {
+    border-radius: 5px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:#05386B;
+    transition: 0.1s;
+
+}
+li span:hover {
+    background-color:#379683;
+    border-radius: 8px;
+    transform: scale(1.1);
+}
+
+
+/*Code Areas*/
+iframe#code {
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: unset;
+    background: #f2f4f6;
+    overflow: hidden;
+}
+.prism-live {
+    min-height: 350px;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #05386B;
+    color: #379683;
+}
+div#coding_area > div {
+    width: 100%;
+    border-left: 15px solid #555865;
+}
+div#coding_area > div:first-child {
+    border-left: none;
+}
+div#coding_area {
+    width: 100%;
+    height: 50%;
+    min-height: 125px;
+    display: flex;
+    overflow: hidden;
+}
+div#code_output {
+    height: 40%;
+}
+
+textarea{
+    padding: 10px;
+    max-height: 100%;
+}
+
+
+div#line{
+    height: 20px;
+    width: 100%;
+    background-color: #379683;
+}
